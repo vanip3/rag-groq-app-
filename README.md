@@ -48,21 +48,7 @@ bashpython rag_system.py --query "What is machine learning?"
 Interactive mode
 bashpython rag_system.py --interactive
 
-# 📁 Project Structure
-rag-groq-app/
-├── rag_system.py           # Main RAG application
-├── requirements.txt        # Python dependencies
-├── .env                   # Environment variables (create this)
-├── .gitignore            # Git ignore rules
-├── README.md             # This documentation
-├── LICENSE               # Open source license
-├── sample_docs/          # Sample documents for testing
-│   ├── sample_doc1.txt   # AI and ML concepts
-│   ├── sample_doc2.txt   # Python programming
-│   └── sample_doc3.txt   # Vector databases
-├── chroma_db/            # ChromaDB storage (auto-created)
-└── tests/                # Unit tests
-    └── test.py
+    
 # 🧪 Testing
 Run the test suite to ensure everything works correctly:
 bashpython -m pytest tests/ -v
@@ -76,18 +62,20 @@ Sample Queries to Test
 🔄 API Reference
 BasicRAGSystem Class
 __init__(collection_name, model_name)
-Initialize the RAG system with specified parameters.
+  Initialize the RAG system with specified parameters.
 load_documents(file_paths)
-Load and process documents into the vector database.
+  Load and process documents into the vector database.
 query(question, n_results=3)
-Complete RAG pipeline: retrieve relevant documents and generate response.
+  Complete RAG pipeline: retrieve relevant documents and generate response.
 retrieve_documents(query, n_results=3)
-Retrieve relevant documents for a given query.
+  Retrieve relevant documents for a given query.
 generate_response(query, retrieved_docs)
-Generate response using Groq with retrieved context.
+  Generate response using Groq with retrieved context.
+  
 🤝 Contributing
 We welcome contributions! Please see our Contributing Guidelines for details.
-Development Setup
+
+# Development Setup
 
 Fork the repository
 Create a feature branch: git checkout -b feature-name
@@ -95,7 +83,7 @@ Make your changes and add tests
 Run tests: python -m pytest
 Submit a pull request
 
-📈 Roadmap
+# 📈 Roadmap
 
  Support for PDF and DOCX documents
  Web interface using Streamlit
@@ -104,7 +92,7 @@ Submit a pull request
  Evaluation metrics and benchmarking
  Docker containerization
 
-🐛 Troubleshooting
+# 🐛 Troubleshooting
 Common Issues
 Import Error: setuptools.build_meta
 bashpip install --upgrade pip setuptools wheel
@@ -118,8 +106,9 @@ Memory Issues
 Reduce batch size in document processing
 Use smaller embedding models for limited memory systems
 
-📄 License
+# 📄 License
 This project is licensed under the MIT License - see the LICENSE file for details.
+
 # 🙏 Acknowledgments
 
 ChromaDB for the vector database
