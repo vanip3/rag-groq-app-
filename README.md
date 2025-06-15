@@ -12,19 +12,6 @@ Flexible Document Processing: Automatic text chunking with configurable overlap
 Interactive Interface: Command-line interface with multiple operation modes
 Extensible Architecture: Easy to modify and extend for different use cases
 
-# 🏗️  System Architecture
-┌─────────────────┐     ┌──────────────────┐    ┌─────────────────┐
-│   Input Query   │───▶│  Vector Search   │───▶│   Response      │
-│                 │     │   (ChromaDB)     │    │  Generation     │
-└─────────────────┘     └──────────────────┘    │   (Groq)        │
-                                                └─────────────────┘
-                                 ▲                      
-                                 │                      
-                       ┌──────────────────┐             
-┌─────────────────┐     │   Document       │             
-│   Documents     │───▶│   Processing     │             
-│   (.txt files)  │     │  & Embedding     │             
-└─────────────────┘     └──────────────────┘
 # 🚀 Quick Start
 Prerequisites
 
