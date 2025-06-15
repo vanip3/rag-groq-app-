@@ -7,7 +7,7 @@ Key Features
 
 Vector Database Integration: ChromaDB for persistent document storage and similarity search
 Semantic Embeddings: all-MiniLM-L6-v2 model for consistent document embeddings
-Fast Inference: Groq's Mixtral-8x7b model for rapid response generation
+Fast Inference: Groq's llama3-8b-8192 model for rapid response generation
 Flexible Document Processing: Automatic text chunking with configurable overlap
 Interactive Interface: Command-line interface with multiple operation modes
 Extensible Architecture: Easy to modify and extend for different use cases
